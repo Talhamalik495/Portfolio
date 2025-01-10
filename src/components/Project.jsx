@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { createTheme } from "../context/Theme";
 
 function Project() {
-  let { theme } = useContext(createTheme)
+  let { theme } = useContext(createTheme);
 
   return (
     <div className="flex justify-center items-center flex-col">
