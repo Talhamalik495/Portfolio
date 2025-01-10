@@ -6,7 +6,7 @@ function Project() {
   let { theme } = useContext(createTheme);
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-cente items-center flex-col">
       <h1 className="text-4xl font-bold pt-10 pb-10 overflow-hidden">
         Latest Project
       </h1>
