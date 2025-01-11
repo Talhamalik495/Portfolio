@@ -22,7 +22,7 @@ function Skills() {
         } `}
       >
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -43,7 +43,7 @@ function Skills() {
           <p>HTML</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -63,7 +63,7 @@ function Skills() {
           <p>CSS</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -83,7 +83,7 @@ function Skills() {
           <p>Javascript</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -103,7 +103,7 @@ function Skills() {
           <p>Bootstrap</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -123,7 +123,7 @@ function Skills() {
           <p>Tailwind Css</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -143,7 +143,7 @@ function Skills() {
           <p>React JS</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -163,7 +163,7 @@ function Skills() {
           <p>Next Js</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
@@ -183,7 +183,7 @@ function Skills() {
           <p>Mongo Db</p>
         </motion.div>
         <motion.div
-          className="h-52 shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1, // Slight zoom-in effect
