@@ -8,6 +8,8 @@ import { RxCross1 } from "react-icons/rx";
 
 function Header() {
   let { theme, changeTheme } = useContext(createTheme);
+  console.log("theme=>", theme);
+
   let [header, setHeader] = useState(false);
   let handletogle = () => {
     setHeader((prev) => !prev);
@@ -16,7 +18,11 @@ function Header() {
     <div>
       <div>
         {header ? (
-          <div className="w-full h-60 fixed shadow-black  z-50 bg-white  flex flex-col gap-5 justify-center items-center top-16 lg:hidden ">
+          <div
+            className={`w-full h-60 fixed shadow-black  z-50   flex flex-col gap-5 justify-center items-center top-16 lg:hidden ${
+              theme == "light" ? "bg-white text-black" : " bg-black text-white"
+            } `}
+          >
             <Link
               className="cursor-pointer"
               to="home"

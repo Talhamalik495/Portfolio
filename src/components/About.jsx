@@ -8,19 +8,19 @@ function About() {
     <div
       data-aos="fade-up"
       id="about"
-      className={` px-10 w-full h-full grid justify-items-center items-center  xl:grid-cols-2 lg:grid-cols-2 xl:gap-10 pt-16 ${
+      className={` px-10 justify-center   md:justify-items-center  w-full h-full grid   xl:grid-cols-1 xl:justify-items-center lg:grid-cols-1 xl:gap-10 pt-16 ${
         theme == "light" ? "bg-white text-black" : "bg-black text-white"
       }`}
     >
-      <div className="animate-bounce">
-        <img
-          className="h-96 w-80 md:hidden sm:hidden lg:flex sm:pt-10"
-          src={photo}
-          alt="remote"
-        />
-      </div>
-      <div className="flex flex-col gap-5">
-        <h2 className="text-2xl">
+      <div className="flex flex-col justify-center items-center gap-5">
+        <h1
+          className={`text-2xl font-bold overflow-hidden mb-5 ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+        >
+          About Me
+        </h1>
+        <h2 className="text-2xl uppercase">
           Hi Im MUHAMMAD TALHA a Passionate Web Developer
         </h2>
 

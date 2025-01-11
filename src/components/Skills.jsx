@@ -7,13 +7,17 @@ function Skills() {
   let { theme } = useContext(createTheme);
   return (
     <div className="flex justify-center items-center flex-col">
-      <h1 className="text-4xl font-bold pt-10 pb-10 overflow-hidden">
+      <h1
+        className={`text-2xl font-bold pt-14 pb-10 overflow-hidden ${
+          theme == "light" ? "text-black" : "text-white"
+        }`}
+      >
         My Skills
       </h1>
       <div
         data-aos="zoom-in"
         id="skills"
-        className={`px-10 grid grid-cols-2 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3  w-full h-full pb-5 overflow-hidden justify-center pt-10 gap-10 sm:px-5  ${
+        className={`px-10 grid grid-cols-2 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3  w-full h-full pb-5 overflow-hidden justify-center pt-5 gap-10 sm:px-5  ${
           theme == "light" ? "text-black" : "bg-black text-white"
         } `}
       >

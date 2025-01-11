@@ -77,7 +77,7 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div data-aos="flip-up" className="animate-pulse md:w-[50%]">
+      <div data-aos="flip-up">
         <img className="h-96 w-80 md:w-[100%]" src={photo} alt="remote" />
       </div>
     </div>

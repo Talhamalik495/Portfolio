@@ -7,13 +7,15 @@ function Project() {
 
   return (
     <div className="flex justify-center items-center flex-col">
-      <h1 className="text-4xl font-bold pt-10 pb-10 overflow-hidden">
+      <h1 className={`text-2xl font-bold pt-10 pb-10 overflow-hidden ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}>
         Latest Project
       </h1>
 
       <div
         id="projects"
-        className={`w-full grid grid-cols-1 md:grid-cols-2 md:gap-7 lg:grid-cols-3 xl:grid-cols-4   justify-center pt-20  pb-20 lg:gap-10 items-center px-10 ${
+        className={`w-full grid grid-cols-1 md:grid-cols-2 md:gap-7 lg:grid-cols-3 xl:grid-cols-4   justify-center pt-10  pb-20 lg:gap-10 items-center px-10 ${
           theme == "light"
             ? "bg-white text-black"
             : "bg-black text-white md:grid md:grid-cols-2"
