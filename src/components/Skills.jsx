@@ -61,7 +61,11 @@ function Skills() {
                 damping: 20,
               }}
             >
-              <img className="h-24 w-28" src={imag} alt="remote" />
+              <img
+                className="h-24 w-28 object-contain"
+                src={imag}
+                alt="remote"
+              />
               <p>{text}</p>
             </motion.div>
           );

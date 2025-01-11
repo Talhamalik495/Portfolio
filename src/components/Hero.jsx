@@ -43,7 +43,7 @@ function Hero() {
                 "Next Js",
                 "Node Js",
                 "Express Js",
-                "MongoDb Js",
+                "MongoDb",
                 "Matarial Ui",
                 "Ant Desegning",
               ],
@@ -82,9 +82,20 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div data-aos="flip-up" className="w-[50%] bg-[#217fc1] rounded-full ">
+      <div
+        data-aos="flip-up"
+        className={`w-[50%] lg:w-[50%] lg:h-[90%] md:w-[40%] md:h-[80%] sm:w-[35%] sm:h-[85%] xs:w-[40%] xs:h-[90%] overflow-hidden h-[90%] rounded-full ${
+          theme == "light"
+            ? "bg-black text-white border-white"
+            : "bg-white text-black border-black"
+        }`}
+      >
         <img
-          className="h-80 w-80 md:w-[100%] rounded-full border-4 border-white"
+          className={`h-80 w-80 xs:h-[100%] lg:w-[100%] lg:h-[80%] xs:w-[100%]  md:w-[100%] rounded-full ${
+            theme == "light"
+              ? "bg-black text-white border-[6px]  border-white"
+              : "bg-white text-black border-[6px] border-black"
+          }`}
           src={photo}
           alt="remote"
         />

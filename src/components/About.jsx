@@ -25,17 +25,17 @@ function About() {
         </h2>
 
         <p className="text-md max-w-xl text-center mb-8">
-          Hi Im Siddique Ahmed a passionate web developer exploring the MERN
-          stack. I specialize in building user-friendly dynamic applications
-          with skills in HTML CSS JavaScript React.js and Next.js. I enjoy
-          crafting clean responsive designs using Tailwind CSS and Bootstrap. On
-          the back end I work with MongoDB Firebase Next Auth and Cloudinary.
-          Currently Im diving into Node.js Express.js and React Native to
-          enhance my full-stack development expertise.
+          Hi Im Talha Arif a passionate web developer exploring the MERN stack.
+          I specialize in building user-friendly dynamic applications with
+          skills in HTML CSS JavaScript React.js and Next.js. I enjoy crafting
+          clean responsive designs using Tailwind CSS and Bootstrap. On the back
+          end I work with MongoDB Firebase Next Auth and Cloudinary. Currently
+          Im diving into Node.js Express.js and React Native to enhance my
+          full-stack development expertise.
         </p>
         <div className="flex gap-5">
           <button
-            className={`px-5 py-3 hover:bg-gray-800 duration-300 transition-all rounded-sm font-semibold mb-10 ${
+            className={`px-5 py-3  duration-300 transition-all rounded-sm font-semibold mb-10 ${
               theme == "light"
                 ? "bg-black text-white hover:bg-gray-800"
                 : "bg-white text-black hover:bg-gray-300"

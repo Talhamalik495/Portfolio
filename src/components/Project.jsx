@@ -12,7 +12,16 @@ import ecomerce from "../assets/ecomerce-web.png";
 
 function Project() {
   let { theme } = useContext(createTheme);
-  let images = [weather, todo, food, github, ecomerce, githucli, password];
+  let images = [
+    weather,
+    todo,
+    food,
+    github,
+    ecomerce,
+    githucli,
+    password,
+    quiz,
+  ];
   return (
     <div className="flex justify-center items-center flex-col mt">
       <h1
