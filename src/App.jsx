@@ -23,6 +23,7 @@ function App() {
     <div className={`${theme == "light" ? "bg-white" : "bg-black"}`}>
       <Header />
       <Hero />
+
       <About />
       <Skills />
       <Project />

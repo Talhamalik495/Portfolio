@@ -8,23 +8,23 @@ function About() {
     <div
       data-aos="fade-up"
       id="about"
-      className={` px-10 justify-center   md:justify-items-center  w-full h-full grid   xl:grid-cols-1 xl:justify-items-center lg:grid-cols-1 xl:gap-10 pt-16 ${
+      className={`px-10 justify-center   md:justify-items-center  w-full h-full grid   xl:grid-cols-1 xl:justify-items-center lg:grid-cols-1 xl:gap-10 pt-16 ${
         theme == "light" ? "bg-white text-black" : "bg-black text-white"
       }`}
     >
       <div className="flex flex-col justify-center items-center gap-5">
         <h1
-          className={`text-2xl font-bold overflow-hidden mb-5 ${
-            theme == "light" ? "text-black" : "text-white"
+          className={`text-3xl font-semibold overflow-hidden mb-5 ${
+            theme == "light" ? "text-black " : "text-white"
           }`}
         >
           About Me
         </h1>
-        <h2 className="text-2xl uppercase">
-          Hi Im MUHAMMAD TALHA a Passionate Web Developer
+        <h2 className="text-2xl uppercase mb-5">
+          Hi I'm MUHAMMAD TALHA 'a Passionate Web Developer
         </h2>
 
-        <p className="text-md">
+        <p className="text-md max-w-xl text-center mb-8">
           Hi Im Siddique Ahmed a passionate web developer exploring the MERN
           stack. I specialize in building user-friendly dynamic applications
           with skills in HTML CSS JavaScript React.js and Next.js. I enjoy
@@ -35,8 +35,10 @@ function About() {
         </p>
         <div className="flex gap-5">
           <button
-            className={`px-5 py-3  rounded-sm font-semibold ${
-              theme == "light" ? "bg-black text-white" : "bg-white text-black"
+            className={`px-5 py-3 hover:bg-gray-800 duration-300 transition-all rounded-sm font-semibold mb-10 ${
+              theme == "light"
+                ? "bg-black text-white hover:bg-gray-800"
+                : "bg-white text-black hover:bg-gray-300"
             }`}
           >
             <a href="/public/update resume.pdf" download={"my cv"}>

@@ -2,13 +2,35 @@ import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { createTheme } from "../context/Theme";
 import { div } from "framer-motion/client";
-
+import html from "../assets/html.png";
+import css from "../assets/css.png";
+import js from "../assets/javascript.png";
+import react from "../assets/reacts.png";
+import tailwind from "../assets/tailwindcss.png";
+import mongodb from "../assets/mongodb.png";
+import nextjs from "../assets/nextjs.png";
+import nodejs from "../assets/nodejs.png";
+import express from "../assets/expressjs.png";
+import typescript from "../assets/typescript.png";
+import bootstrap from "../assets/bootstrap.png";
 function Skills() {
   let { theme } = useContext(createTheme);
+  let images = [
+    { imag: html, text: "HTML" },
+    { imag: css, text: "CSS" },
+    { imag: js, text: "JavaScript" },
+    { imag: bootstrap, text: "Bootstrap" },
+    { imag: react, text: "React" },
+    { imag: tailwind, text: "Tailwind Css" },
+    { imag: nextjs, text: "Next Js" },
+    { imag: mongodb, text: "MongoDB" },
+    { imag: express, text: "Express Js" },
+    { imag: nodejs, text: "Node Js" },
+  ];
   return (
     <div className="flex justify-center items-center flex-col">
       <h1
-        className={`text-2xl font-bold pt-14 pb-10 overflow-hidden ${
+        className={`text-3xl font-semibold pt-14 pb-10 overflow-hidden ${
           theme == "light" ? "text-black" : "text-white"
         }`}
       >
@@ -17,11 +39,34 @@ function Skills() {
       <div
         data-aos="zoom-in"
         id="skills"
-        className={`px-10 grid grid-cols-2 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-3  w-full h-full pb-5 overflow-hidden justify-center pt-5 gap-10 sm:px-5  ${
+        className={`px-10 grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-5 md:grid-cols-3  w-full h-full pb-5 overflow-hidden justify-center pt-5 gap-10 sm:px-5  ${
           theme == "light" ? "text-black" : "bg-black text-white"
         } `}
       >
-        <motion.div
+        {images.map(({ imag, text }) => {
+          // console.log(img);
+
+          return (
+            <motion.div
+              className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+              whileHover={{
+                y: -5, // Y-axis par 20px upar le jata hai
+                scale: 1, // Slight zoom-in effect
+
+                // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
+              }}
+              transition={{
+                type: "spring",
+                stiffness: 300,
+                damping: 20,
+              }}
+            >
+              <img className="h-24 w-28" src={imag} alt="remote" />
+              <p>{text}</p>
+            </motion.div>
+          );
+        })}
+        {/* <motion.div
           className="h-52 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
@@ -201,7 +246,7 @@ function Skills() {
             alt="remote"
           />
           <p>Typescript</p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

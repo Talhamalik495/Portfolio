@@ -22,7 +22,7 @@ function Hero() {
       <div className="flex flex-col gap-5">
         <h2
           data-aos="fade-down"
-          className="text-2xl  font-medium overflow-hidden"
+          className="text-3xl  font-semibold overflow-hidden leading-snug"
         >
           Hi Im MUHAMMAD TALHA a Passionate Web Developer
           <br />
@@ -35,12 +35,15 @@ function Hero() {
               loop: true,
               breakLines: false,
               strings: [
-                "Html",
-                "Css ",
-                "Bootstrap",
-                "Javascript",
+                "HTML",
+                "CSS",
+                "BootStrap",
+                "JavaScript",
                 "React Js",
                 "Next Js",
+                "Node Js",
+                "Express Js",
+                "MongoDb Js",
                 "Matarial Ui",
                 "Ant Desegning",
               ],
@@ -48,7 +51,7 @@ function Hero() {
           />
         </h2>
 
-        <p className="text-md" data-aos="fade-right">
+        <p className="text-gray-600 text-lg" data-aos="fade-right">
           Hi Im Siddique Ahmed a passionate web developer exploring the MERN
           stack. I specialize in building user-friendly dynamic applications
           with skills in HTML CSS JavaScript React.js and Next.js. I enjoy
@@ -57,19 +60,21 @@ function Hero() {
           Currently Im diving into Node.js Express.js and React Native to
           enhance my full-stack development expertise.
         </p>
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-5">
           <button
             onClick={handleDownload}
             data-aos="fade-down-right"
-            className={`px-5 py-3   rounded-sm  font-semibold ${
-              theme == "light" ? "bg-black text-white" : "bg-white text-black"
+            className={`px-5 py-3 duration-300 transition-all  rounded-sm  font-semibold ${
+              theme == "light"
+                ? "bg-black text-white hover:bg-gray-800"
+                : "bg-white text-black hover:bg-gray-300"
             }`}
           >
             Download CV
           </button>
           <button
             data-aos="fade-down-left"
-            className="px-5 py-3 bg-[#f3f4f6] text-black rounded-sm font-semibold"
+            className="px-5 py-3 bg-[#f3f4f6] text-black rounded-sm font-semibold hover:bg-gray-300"
           >
             <Link to="about" smooth={true} duration={300}>
               About Me{" "}
@@ -79,7 +84,7 @@ function Hero() {
       </div>
       <div data-aos="flip-up" className="w-[50%] bg-[#217fc1] rounded-full ">
         <img
-          className="h-80 w-80 md:w-[100%] rounded-full"
+          className="h-80 w-80 md:w-[100%] rounded-full border-4 border-white"
           src={photo}
           alt="remote"
         />
