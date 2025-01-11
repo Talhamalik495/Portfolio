@@ -6,6 +6,7 @@ import github from "../assets/github-user-finde-web.png";
 import todo from "../assets/todo-list-web.png";
 import quiz from "../assets/quiz-web.png";
 import weather from "../assets/weather-web.png";
+import password from "../assets/password-genrator-web.png";
 
 function Project() {
   let { theme } = useContext(createTheme);
