@@ -12,14 +12,21 @@ function ContactUs() {
   return (
     <div
       id="contactus"
-      className={`grid gap-10 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 md:gap-20 sm:gap-20 justify-items-center overflow-hidden w-full h-full   xl:gap-10 justify-center  pb-10 px-10 ${
-        theme == "light" ? "bg-white text-black" : "bg-black text-white"
+      className={`grid  gap-10 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 md:gap-20 sm:gap-20 justify-items-center overflow-hidden w-full h-full   xl:gap-10 justify-center  pb-10 px-10 ${
+        theme == "light" ? "text-black" : "text-white"
       }`}
     >
       <div
         className="overflow-hidden flex flex-col gap-3 justify-center"
         data-aos="fade-up-right"
       >
+        <h1
+          className={`flex justify-center pb-5 pt-5 text-2xl font-bold ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+        >
+          Contact Us
+        </h1>
         <h1 className="text-2xl font-bold">Get in touch</h1>
         <p>Fill out the form and well get back to you as soon as possible.</p>
         <p>Follow us</p>
@@ -47,23 +54,54 @@ function ContactUs() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-5 w-[100%]" data-aos="fade-up-left ">
-        <Label className="overflow-hidden" htmlFor="email">
+      <div
+        className={`grid grid-cols-1 gap-5 w-[100%] ${
+          theme == "light" ? "text-black" : "text-black"
+        }`}
+        // data-aos="fade-up-left"
+      >
+        <Label
+          className={`overflow-hidden ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+          htmlFor="email"
+        >
           Name
         </Label>
 
         <Input type="text" placeholder="Name" />
-        <Label className="overflow-hidden" htmlFor="email">
+        <Label
+          className={`overflow-hidden ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+          htmlFor="email"
+        >
           Email
         </Label>
 
         <Input type="email" placeholder="Email" />
-        <Label className="overflow-hidden" htmlFor="email">
+        <Label
+          className={`overflow-hidden ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+          htmlFor="email"
+        >
           Meassage
         </Label>
 
-        <Input className="overflow-hidden" type="text" placeholder="Meassage" />
-        <Label className="overflow-hidden" htmlFor="email">
+        <Input
+          className={`overflow-hidden ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+          type="text"
+          placeholder="Meassage"
+        />
+        <Label
+          className={`overflow-hidden ${
+            theme == "light" ? "text-black" : "text-white"
+          }`}
+          htmlFor="email"
+        >
           Address
         </Label>
 
