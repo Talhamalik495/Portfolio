@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import { createTheme } from "../context/Theme";
 import food from "../assets/food-panda-website-img.png";
 import github from "../assets/github-user-finde-web.png";
+import todo from "../assets/todo-list-web.png";
+import quiz from "../assets/quiz-web.png";
+import weather from "../assets/weather-web.png";
 
 function Project() {
   let { theme } = useContext(createTheme);
@@ -26,7 +29,7 @@ function Project() {
         }`}
       >
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -41,7 +44,7 @@ function Project() {
           <img className="h-full object-fill w-full" src={food} alt="remote" />
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -54,13 +57,13 @@ function Project() {
           }}
         >
           <img
-            className="h-full w-full object-fill"
+            className="h-full w-full object-cover"
             src={github}
             alt="remote"
           />
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -72,15 +75,10 @@ function Project() {
             damping: 20,
           }}
         >
-          <img
-            className="h-24 w-28"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FJavascript.b5de6115.png&w=128&q=75"
-            alt="remote"
-          />
-          <p>Javascript</p>
+          <img className="h-full w-full object-full" src={quiz} alt="remote" />
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -100,7 +98,7 @@ function Project() {
           <p>Bootstrap</p>
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -120,7 +118,7 @@ function Project() {
           <p>Tailwind Css</p>
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -140,7 +138,7 @@ function Project() {
           <p>React JS</p>
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -153,14 +151,13 @@ function Project() {
           }}
         >
           <img
-            className="h-28 w-28"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FNextJs.b7f85056.png&w=128&q=75"
+            className="h-full w-full object-cover"
+            src={weather}
             alt="remote"
           />
-          <p>Next Js</p>
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
@@ -172,15 +169,10 @@ function Project() {
             damping: 20,
           }}
         >
-          <img
-            className="h-24 w-32"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMongodb.ca17518f.png&w=128&q=75"
-            alt="remote"
-          />
-          <p>Mongo Db</p>
+          <img className="h-full w-full object-cover" src={todo} alt="remote" />
         </motion.div>
         <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400  flex flex-col gap-3 justify-center items-center"
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
             y: -5, // Y-axis par 20px upar le jata hai
             scale: 1.1, // Slight zoom-in effect
