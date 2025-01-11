@@ -7,6 +7,8 @@ import todo from "../assets/todo-list-web.png";
 import quiz from "../assets/quiz-web.png";
 import weather from "../assets/weather-web.png";
 import password from "../assets/password-genrator-web.png";
+import githucli from "../assets/githu-cli-web.png";
+import ecomerce from "../assets/ecomerce-web.png";
 
 function Project() {
   let { theme } = useContext(createTheme);
@@ -29,115 +31,6 @@ function Project() {
             : "bg-black text-white md:grid md:grid-cols-2"
         }`}
       >
-        <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400"
-          whileHover={{
-            y: -5, // Y-axis par 20px upar le jata hai
-            scale: 1.1, // Slight zoom-in effect
-            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <img className="h-full object-fill w-full" src={food} alt="remote" />
-        </motion.div>
-        <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400"
-          whileHover={{
-            y: -5, // Y-axis par 20px upar le jata hai
-            scale: 1.1, // Slight zoom-in effect
-            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <img
-            className="h-full w-full object-cover"
-            src={github}
-            alt="remote"
-          />
-        </motion.div>
-        <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400"
-          whileHover={{
-            y: -5, // Y-axis par 20px upar le jata hai
-            scale: 1.1, // Slight zoom-in effect
-            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <img className="h-full w-full object-full" src={quiz} alt="remote" />
-        </motion.div>
-        <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400"
-          whileHover={{
-            y: -5, // Y-axis par 20px upar le jata hai
-            scale: 1.1, // Slight zoom-in effect
-            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <img
-            className="h-28 w-28"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FBotstrap.84c7b562.png&w=128&q=75"
-            alt="remote"
-          />
-          <p>Bootstrap</p>
-        </motion.div>
-        <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400"
-          whileHover={{
-            y: -5, // Y-axis par 20px upar le jata hai
-            scale: 1.1, // Slight zoom-in effect
-            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <img
-            className="h-20 w-28"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTailwindCss.b79a69be.png&w=128&q=75"
-            alt="remote"
-          />
-          <p>Tailwind Css</p>
-        </motion.div>
-        <motion.div
-          className="h-80 rounded-md shadow-lg shadow-gray-400"
-          whileHover={{
-            y: -5, // Y-axis par 20px upar le jata hai
-            scale: 1.1, // Slight zoom-in effect
-            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
-          }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 20,
-          }}
-        >
-          <img
-            className="h-24 w-32"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FReact.5695d592.png&w=128&q=75"
-            alt="remote"
-          />
-          <p>React JS</p>
-        </motion.div>
         <motion.div
           className="h-80 rounded-md shadow-lg shadow-gray-400"
           whileHover={{
@@ -185,12 +78,98 @@ function Project() {
             damping: 20,
           }}
         >
+          <img className="h-full object-fill w-full" src={food} alt="remote" />
+        </motion.div>
+        <motion.div
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
+          whileHover={{
+            y: -5, // Y-axis par 20px upar le jata hai
+            scale: 1.1, // Slight zoom-in effect
+            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
           <img
-            className="h-24 w-32"
-            src="https://new-portfolio01-drab.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FTypescript.7abc518a.png&w=128&q=75"
+            className="h-full w-full object-cover"
+            src={github}
             alt="remote"
           />
-          <p>Typescript</p>
+        </motion.div>
+        <motion.div
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
+          whileHover={{
+            y: -5, // Y-axis par 20px upar le jata hai
+            scale: 1.1, // Slight zoom-in effect
+            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <img
+            className="h-full w-full object-cover"
+            src={ecomerce}
+            alt="remote"
+          />
+        </motion.div>
+        <motion.div
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
+          whileHover={{
+            y: -5, // Y-axis par 20px upar le jata hai
+            scale: 1.1, // Slight zoom-in effect
+            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <img
+            className="h-full w-full object-full"
+            src={githucli}
+            alt="remote"
+          />
+        </motion.div>
+        <motion.div
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
+          whileHover={{
+            y: -5, // Y-axis par 20px upar le jata hai
+            scale: 1.1, // Slight zoom-in effect
+            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <img
+            className="h-full w-full object-cover"
+            src={password}
+            alt="remote"
+          />
+        </motion.div>
+        <motion.div
+          className="h-80 rounded-md shadow-lg shadow-gray-400"
+          whileHover={{
+            y: -5, // Y-axis par 20px upar le jata hai
+            scale: 1.1, // Slight zoom-in effect
+            // boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)", // Shadow enhancement
+          }}
+          transition={{
+            type: "spring",
+            stiffness: 300,
+            damping: 20,
+          }}
+        >
+          <img className="h-full w-full object-full" src={quiz} alt="remote" />
         </motion.div>
       </div>
     </div>

@@ -64,7 +64,7 @@ function ContactUs() {
           className={`overflow-hidden ${
             theme == "light" ? "text-black" : "text-white"
           }`}
-          htmlFor="email"
+          htmlFor="name"
         >
           Name
         </Label>
@@ -84,28 +84,22 @@ function ContactUs() {
           className={`overflow-hidden ${
             theme == "light" ? "text-black" : "text-white"
           }`}
-          htmlFor="email"
+          htmlFor="address"
         >
           Meassage
         </Label>
 
-        <Input
-          className={`overflow-hidden ${
-            theme == "light" ? "text-black" : "text-white"
-          }`}
-          type="text"
-          placeholder="Meassage"
-        />
+        <Input type="text" placeholder="Meassage" />
         <Label
           className={`overflow-hidden ${
             theme == "light" ? "text-black" : "text-white"
           }`}
-          htmlFor="email"
+          htmlFor="address"
         >
           Address
         </Label>
 
-        <Input type="text" placeholder="Meassage" />
+        <Input type="text" placeholder="Address" />
       </div>
     </div>
   );

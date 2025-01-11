@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import TypeIt from "typeit-react";
-import photo from "../assets/3.png";
+import photo from "../assets/4.png";
 import { createTheme } from "../context/Theme";
 import { Link } from "react-scroll";
 
@@ -61,7 +61,7 @@ function Hero() {
           <button
             onClick={handleDownload}
             data-aos="fade-down-right"
-            className={`px-5 py-3  rounded-sm  font-semibold ${
+            className={`px-5 py-3   rounded-sm  font-semibold ${
               theme == "light" ? "bg-black text-white" : "bg-white text-black"
             }`}
           >
@@ -77,8 +77,12 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div data-aos="flip-up">
-        <img className="h-96 w-80 md:w-[100%]" src={photo} alt="remote" />
+      <div data-aos="flip-up" className="w-[50%] bg-[#217fc1] rounded-full ">
+        <img
+          className="h-80 w-80 md:w-[100%] rounded-full"
+          src={photo}
+          alt="remote"
+        />
       </div>
     </div>
   );
