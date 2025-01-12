@@ -5,7 +5,7 @@ import { createTheme } from "../context/Theme";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { RxCross1 } from "react-icons/rx";
-
+import image from "../assets/3.png";
 function Header() {
   let { theme, changeTheme } = useContext(createTheme);
   console.log("theme=>", theme);
@@ -84,11 +84,7 @@ function Header() {
 
         <div className="lg:flex md:hidden sm:hidden xs:hidden">
           {" "}
-          <img
-            className="w-12 h-12 rounded-full"
-            src="http://localhost:5173/src/assets/3.png"
-            alt="remote"
-          />
+          <img className="w-12 h-12 rounded-full" src={image} alt="remote" />
         </div>
         <div
           className={`lg:flex md:hidden sm:hidden xs:hidden lg:gap-5 ${
