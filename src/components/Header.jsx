@@ -84,7 +84,11 @@ function Header() {
 
         <div className="lg:flex md:hidden sm:hidden xs:hidden">
           {" "}
-          <img className="w-12 h-12 rounded-full" src={image} alt="remote" />
+          <img
+            className="w-12 h-12 rounded-full"
+            src={image}
+            alt="remoteimage"
+          />
         </div>
         <div
           className={`lg:flex md:hidden sm:hidden xs:hidden lg:gap-5 ${
